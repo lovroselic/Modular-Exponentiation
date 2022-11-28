@@ -8,6 +8,7 @@ std::vector<std::string> splitString(std::string str);
 std::string joinVector(const std::vector<std::string>& data, const std::string separator);
 std::string joinVector(const std::vector<int>& data, const std::string separator);
 std::string joinVector(const std::vector<long long int>& data, const std::string separator);
+std::string joinVector(const std::vector<unsigned long long int>& data, const std::string separator);
 std::string joinVector(const std::vector<double>& data, const std::string separator);
 std::vector<int> stringVectorToInt(std::vector<std::string>& vct);
 std::vector<int> splitToInt(std::string str, const std::string separator);

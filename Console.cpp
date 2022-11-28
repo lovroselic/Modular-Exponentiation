@@ -1,5 +1,5 @@
 /*
-	v 0.7
+	v 0.8
 */
 #include <iostream>
 #include <vector>
@@ -18,6 +18,23 @@ void printArray(int* data, int length) {
 
 void printVector(std::vector<int>& vct) {
 	for (int v : vct) {
+		std::cout << v << std::endl;
+	}
+}
+void printVector(std::vector<long>& vct) {
+	for (long v : vct) {
+		std::cout << v << std::endl;
+	}
+}
+
+void printVector(std::vector<long long>& vct) {
+	for (long v : vct) {
+		std::cout << v << std::endl;
+	}
+}
+
+void printVector(std::vector<unsigned long long>& vct) {
+	for (long v : vct) {
 		std::cout << v << std::endl;
 	}
 }

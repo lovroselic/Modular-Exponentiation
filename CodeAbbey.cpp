@@ -1,6 +1,6 @@
 /*
 	selection of helper functions
-	v0.8
+	v0.9
 */
 
 #include <iostream>
@@ -84,6 +84,18 @@ std::string joinVector(const std::vector<int>& data, const std::string separator
 	return result;
 }
 std::string joinVector(const std::vector<long long int>& data, const std::string separator) {
+	std::string result = "";
+	if (data.size() == 0) return result;
+	result += std::to_string(data.at(0));
+	if (data.size() > 1) {
+		for (std::vector<int>::size_type i = 1; i != data.size(); i++) {
+			result += separator;
+			result += std::to_string(data.at(i));
+		}
+	}
+	return result;
+}
+std::string joinVector(const std::vector<unsigned long long int>& data, const std::string separator) {
 	std::string result = "";
 	if (data.size() == 0) return result;
 	result += std::to_string(data.at(0));

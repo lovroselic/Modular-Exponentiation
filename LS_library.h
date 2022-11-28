@@ -8,6 +8,8 @@ double st_dev(std::vector<int>& vect);
 double st_dev(std::vector<int>& vect, double avg);
 double to_radians(double deg);
 double to_degree(double rad);
+std::string NumberToBin(int n);
+int BinToNumber(std::string bin);
 
 #endif // !LS_LIB
 
